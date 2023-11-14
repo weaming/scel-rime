@@ -2,7 +2,6 @@
 name: sogou.shenzhen
 version: "2023.11.15"
 sort: by_weight
-use_preset_vocabulary: true
 ...
 
 阿宝工业园	a bao gong ye yuan	1763

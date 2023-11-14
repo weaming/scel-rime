@@ -2,7 +2,6 @@
 name: sogou.entry
 version: "2023.11.15"
 sort: by_weight
-use_preset_vocabulary: true
 import_tables:
   - sogou.popular
   - sogou.computer
@@ -32,3 +31,5 @@ import_tables:
   - sogou.sudongpo
   - sogou.zhuangzi
 ...
+
+

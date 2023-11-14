@@ -2,7 +2,6 @@
 name: sogou.buddhism
 version: "2023.11.15"
 sort: by_weight
-use_preset_vocabulary: true
 ...
 
 阿巴耶卡罗笈多	a ba ye ka luo ji duo	1924

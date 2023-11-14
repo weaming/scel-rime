@@ -2,7 +2,6 @@
 name: sogou.acupoint
 version: "2023.11.15"
 sort: by_weight
-use_preset_vocabulary: true
 ...
 
 安眠	an mian	354

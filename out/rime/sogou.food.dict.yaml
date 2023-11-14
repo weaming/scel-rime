@@ -2,7 +2,6 @@
 name: sogou.food
 version: "2023.11.15"
 sort: by_weight
-use_preset_vocabulary: true
 ...
 
 阿拉伯胶	a la bo jiao	1190

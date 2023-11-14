@@ -2,7 +2,6 @@
 name: sogou.libai
 version: "2023.11.15"
 sort: by_weight
-use_preset_vocabulary: true
 ...
 
 阿谁扶上马	a shui fu shang ma	2461

@@ -2,7 +2,6 @@
 name: sogou.physics
 version: "2023.11.15"
 sort: by_weight
-use_preset_vocabulary: true
 ...
 
 阿贝不变量	a bei bu bian liang	896

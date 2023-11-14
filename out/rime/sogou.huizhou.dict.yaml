@@ -2,7 +2,6 @@
 name: sogou.huizhou
 version: "2023.11.15"
 sort: by_weight
-use_preset_vocabulary: true
 ...
 
 阿婆髻	a po ji	4135

@@ -2,7 +2,6 @@
 name: sogou.zhuangzi
 version: "2023.11.15"
 sort: by_weight
-use_preset_vocabulary: true
 ...
 
 埃殆为病	ai dai wei bing	5491

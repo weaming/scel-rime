@@ -2,7 +2,6 @@
 name: sogou.astronomical
 version: "2023.11.15"
 sort: by_weight
-use_preset_vocabulary: true
 ...
 
 阿贝比长仪	a bei bi chang yi	2280

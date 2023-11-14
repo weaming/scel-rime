@@ -2,7 +2,6 @@
 name: sogou.accounting
 version: "2023.11.15"
 sort: by_weight
-use_preset_vocabulary: true
 ...
 
 阿尔法风险	a er fa feng xian	2445
