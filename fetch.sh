@@ -1,7 +1,8 @@
 #!/bin/bash
 source ./config
 # Clear the output directory
-rm -rf out
+rm -rf out/rime
+rm -rf out/scel/*.txt
 
 # Create necessary directories
 mkdir -p out/scel
@@ -18,10 +19,16 @@ while [ "x${DICT_IDS[i]}" != "x" ]; do
   shortname=${DICT_SHORTS[i]}
   master_header+="  - ${DICT_PREFIX}.${shortname}\n"
   echo "Fetching ${id}: ${name}"
-  url="http://pinyin.sogou.com/d/dict/download_cell.php?id=${id}&name=${name}"
-  echo $url
-  curl -L $url > out/scel/$id.scel
-  python ./scel2txt.py out/scel/$id.scel
+  dest=out/scel/$id.scel
+  if [ ! -f $dest ]; then
+    url="http://pinyin.sogou.com/d/dict/download_cell.php?id=${id}&name=${name}"
+    echo $url
+    curl -L $url > $dest
+  else
+    echo ignore downloading
+  fi
+
+  python ./scel2txt.py $dest
   txt=$(cat out/scel/$id.txt)
   header="---\nname: ${DICT_PREFIX}.${shortname}\nversion: \"${date}\"\nsort: by_weight\nuse_preset_vocabulary: true\n...\n\n"
   echo -e "$header${txt}" > out/rime/${DICT_PREFIX}.${shortname}.dict.yaml
