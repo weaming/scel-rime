@@ -1,4 +1,1 @@
-*.scel
-*.txt
-out
-config
+out/scel
