@@ -7,7 +7,7 @@ This project is for Chinese IME, thus this document is written in Chinese.
 
 拷贝 `config.example` 到 `config` 文件，修改其中的数组 `DICT_IDS` `DICT_NAMES` `DICT_MASTER_NAME` 和 `DICT_SHORTS`。
 
-其中，`DICT_IDS` 代表细胞词库的 ID，可以从细胞词库的详情页面URL中获取（例如 `http://pinyin.sogou.com/dict/detail/index/15117?rf=dictindex` 中的 `15117` 就是 ID）
+其中，`DICT_IDS` 代表细胞词库的 ID，可以从细胞词库的详情页面URL中获取（例如 `http://pinyin.sogou.com/dict/detail/index/15117` 中的 `15117` 就是 ID）
 
 `DICT_NAMES` 即为细胞词库的名称，请直接从网页上复制（带有 `官方推荐` 字样的也要完整复制，那也是名称中的一部分）
 
