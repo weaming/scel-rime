@@ -18,7 +18,9 @@ while [ "x${DICT_IDS[i]}" != "x" ]; do
   shortname=${DICT_SHORTS[i]}
   master_header+="  - ${DICT_PREFIX}.${shortname}\n"
   echo "Fetching ${id}: ${name}"
-  curl -L "http://pinyin.sogou.com/d/dict/download_cell.php?id=${id}&name=${name}&f=detail" > out/scel/$id.scel
+  url="http://pinyin.sogou.com/d/dict/download_cell.php?id=${id}&name=${name}"
+  echo $url
+  curl -L $url > out/scel/$id.scel
   python ./scel2txt.py out/scel/$id.scel
   txt=$(cat out/scel/$id.txt)
   header="---\nname: ${DICT_PREFIX}.${shortname}\nversion: \"${date}\"\nsort: by_weight\nuse_preset_vocabulary: true\n...\n\n"
