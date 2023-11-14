@@ -9,7 +9,7 @@ mkdir -p out/scel
 mkdir -p out/rime
 
 date=$(date +%Y.%m.%d)
-master_header="---\nname: ${DICT_PREFIX}.${DICT_MASTER_NAME}\nversion: \"${date}\"\nsort: by_weight\nuse_preset_vocabulary: true\nimport_tables:\n  - luna_pinyin\n"
+master_header="---\nname: ${DICT_PREFIX}.${DICT_MASTER_NAME}\nversion: \"${date}\"\nsort: by_weight\nimport_tables:\n  - luna_pinyin\n"
 
 # Loop over all the dictionaries
 i=0
@@ -30,7 +30,7 @@ while [ "x${DICT_IDS[i]}" != "x" ]; do
 
   python ./scel2txt.py $dest
   txt=$(cat out/scel/$id.txt)
-  header="---\nname: ${DICT_PREFIX}.${shortname}\nversion: \"${date}\"\nsort: by_weight\nuse_preset_vocabulary: true\n...\n\n"
+  header="---\nname: ${DICT_PREFIX}.${shortname}\nversion: \"${date}\"\nsort: by_weight\n...\n\n"
   echo -e "$header${txt}" > out/rime/${DICT_PREFIX}.${shortname}.dict.yaml
   i=$(( $i + 1 ))
 done
